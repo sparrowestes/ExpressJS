@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    font-family: 'Lato', sans-serif;
+  }
+
+h1 {
+  margin: 20px;
+  color: #fff;
+}
+
+p {
+    color: #FF851B;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.btn {
+    color: #fff;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px #FF851B solid;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.showcase {
+    height: 315px;
+    background-color: #B10DC9;
+    color: #fff;
+    position: relative;
+}
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+    transform: translateX(-100%);
+}
+    100% {
+    transform: translateX(0);
+}
+}
+  
